@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="sl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>403 - Dostop do XML-RPC zaščiten</title>
+        <link rel="stylesheet" href="https://www.neoserv.si/dist/static/apache-pages/main.css">
+    </head>
+    <body class="">
+		<div class="container">
+			<div class="align-left main-title with-subtitle">
+				<h1 class="c-blue lato">Dostop do <strong>XML-RPC</strong> je trenutno zaščiten. </h1>
+				<p class="sub-title">Privzeto je dostop omogočen le iz slovenskega (SI) IP naslovnega območja.</p>
+			</div>
+			<div class="brd-bt-2"></div>
+			<img class="mt2em" src="https://www.neoserv.si/dist/static/apache-pages/resell-403-wordpress.png" alt="WordPress XML-RPC zaščita">
+		</div>
+		<div class="container">
+			<div class="grid mt2em mb2em">
+				<h2>URI: <strong>https://pepekingprawn.vip/xmlrpc.php</strong></h2>
+				<p>Vaš IP naslov: <strong class="font-mono">169.150.218.22</strong>  &nbsp;|&nbsp; Območje <em class="c-dgrey">(država)</em>: <strong class="font-mono">NL</strong></p>
+				<p><br /></p>
+				<h3 class="">Razlog za zaščito XML-RPC</h3>
+				<p>Zaradi povečanega obsega napadov na Wordpress aplikacije preko XML-RPC je bilo slednje zaščiteno na vseh strežniških okoljih.</p>
+				<p><br /></p>
+				<h3 class="">Kako ukrepati?</h3>
+				<div class="">
+					<p> Za posamezno WordPress stran je dostop do XML-RPC še vedno moč omogočiti z ustrezno direktivo v <strong>".htaccess"</strong> datoteki spletne strani.</p>
+					<p>Primer take direktive:</p>
+					
+					<pre class="language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># BEGIN Allow XML-RPC access</span>
+<span class="token operator">&lt;</span>FilesMatch <span class="token string">"(xmlrpc)\.php$"</span><span class="token operator">&gt;</span>
+	Require all granted
+<span class="token operator">&lt;</span>/FilesMatch<span class="token operator">&gt;</span>
+<span class="token comment" spellcheck="true"># END Allow XML-RPC access</span></code></pre>
+
+				</div>
+			</div>
+		</div>
+
+    </body>
+</html>
+
